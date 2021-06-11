@@ -358,6 +358,10 @@ If using the command line, you can directly edit the transcription output file g
 
 Instructions for deploying the web application on Cloud Foundry can be found [here](doc/cloud-deploy.md).
 
+# Deploy on IBM Cloud as a custom app
+
+Instructions for deploying the web application on Cloud Foundry as a custom app can be found [here](doc/cloud-deploy-custom.md).
+
 # Learn more
 
 * **Artificial Intelligence Code Patterns**: Enjoyed this Code Pattern? Check out our other [AI Code Patterns](https://developer.ibm.com/technologies/artificial-intelligence/)
