@@ -10,12 +10,58 @@ These are instructions for a quick deployment of the web app (as a custom app) o
 
 ## Steps
 1. Copy IBM STT credentials to Train-Custom-Speech/services.json
+```
+{
+  "services": {
+    "code-pattern-custom-language-model": [
+      {
+        "credentials": {
+          "apikey": "<your api key>",
+          "url": "<your api url>"
+        },
+        "label": "speech_to_text",
+        "name": "code-pattern-custom-language-model"
+      }
+    ]
+  }
+}
+```
 
 2. Copy base model to Train-Custom-Speech/model/user.json
+```
+{
+  "user1": {
+    "password": "user1",
+    "langModel": "custom-model-1",
+    "acousticModel": "acoustic-model-1",
+    "baseModel": "en-US_NarrowbandModel"
+  },
+  "user2": {
+    "password": "user2",
+    "langModel": "custom-model-2",
+    "acousticModel": "acoustic-model-2",
+    "baseModel": "en-US_NarrowbandModel"
+  }
+}
+```
 
 3. Edit the name of app in Train-Custom-Speech/client/src/App.js
+```
+<Navbar.Header>
+    <Navbar.Brand>
+        <Link to="/">Watson STT Customizer</Link>
+    </Navbar.Brand>
+    <Navbar.Toggle />
+</Navbar.Header>
+```
 
 4. Edit the title of app page in Train-Custom-Speech/client/public/index.html
+```
+<head>
+    ...
+    <title>Watson Speech to Text Customizer</title>
+</head>
+```
 
 5. Edit name and route the app in Train-Custom-Speech/manifest.yml
 ```
