@@ -358,9 +358,9 @@ If using the command line, you can directly edit the transcription output file g
 
 Instructions for deploying the web application on Cloud Foundry can be found [here](doc/cloud-deploy.md).
 
-# Deploy on IBM Cloud as a custom app
+# Deploy web app (as a custom app) on IBM Cloud
 
-Instructions for deploying the web application on Cloud Foundry as a custom app can be found [here](doc/cloud-deploy-custom.md).
+Instructions for deploying the web application (as a custom app) on Cloud Foundry can be found [here](doc/cloud-deploy-custom.md).
 
 # Learn more
 

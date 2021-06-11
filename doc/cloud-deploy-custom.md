@@ -1,6 +1,6 @@
-# Deploy web app on IBM Cloud using Cloud Foundry as a custom app
+# Deploy web app (as a custom app) on IBM Cloud using Cloud Foundry
 
-These are instructions for a quick deployment of the web app on IBM Cloud.
+These are instructions for a quick deployment of the web app (as a custom app) on IBM Cloud.
 
 ## Prerequisites
 
@@ -8,6 +8,7 @@ These are instructions for a quick deployment of the web app on IBM Cloud.
   tool is installed locally. Follow the instructions in the linked documentation to
   configure your environment.
 
+## Steps
 1. Copy IBM STT credentials to Train-Custom-Speech/services.json
 
 2. Copy base model to Train-Custom-Speech/model/user.json
