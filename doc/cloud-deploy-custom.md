@@ -67,17 +67,17 @@ These are instructions for a quick deployment of the web app (as a custom app) o
 ```
 ---
 applications:
- - name: watson-stt-customizer
+ - name: stt-customizer-bigclient-campaign-xx
    memory: 512M
    routes:
-   - route: watson-stt-customizer.mybluemix.net
+   - route: stt-customizer-bigclient-campaign-xx.mybluemix.net
 ```
 
-6. Edit the API_ENDPOINT/WS_ENDPOINT
+6. Edit the Train-Custom-Speech/client/src/config.js
 ```
 export default {
-  API_ENDPOINT: 'https://watson-stt-customizer.mybluemix.net/api',
-  WS_ENDPOINT: 'wss://watson-stt-customizer.mybluemix.net/',
+  API_ENDPOINT: 'https://stt-customizer-bigclient-campaign-xx.mybluemix.net/api',
+  WS_ENDPOINT: 'wss://stt-customizer-bigclient-campaign-xx.mybluemix.net/',
   MAX_AUDIO_SIZE: 15000000,
 };
 ```
@@ -85,12 +85,16 @@ export default {
 7. Make sure build files are up to date. From the root of the project, run:
 
 ```bash
+npm install
 npm run build
 cd client && npm run build
+cd ..
 ```
 
 8. Deploy the app. From the root of the project run:
 
 ```bash
+ibmcloud login
+ibmcloud target --cf
 ibmcloud app push
 ```
